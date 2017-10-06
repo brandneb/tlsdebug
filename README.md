@@ -4,6 +4,10 @@ A quick & dirty hack to debug connections on top of TLS. After connecting to a s
 
 You can take a look at the certificates presented by the server via the menu option.
 
+## Building
+
+Use [Qt Creator](https://qt.io) to open the .pro file and hit run. Prebuilt binaries for Windows (Oct 2016) can be found [here](https://bbrandner.com/tlsdebug).
+
 ## Example: HTTPS
 
 ![Main View](doc/scr01.png)
