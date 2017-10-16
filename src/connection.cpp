@@ -34,6 +34,12 @@ Connection::Connection(QObject *parent) : QObject(parent)
         if(state == QAbstractSocket::UnconnectedState) {
             disconnected();
         }
+        if(state == QAbstractSocket::HostLookupState) {
+            info("Looking up host");
+        }
+        if(state == QAbstractSocket::ConnectingState) {
+            info("Connecting....");
+        }
         qDebug() << "state changed to" << state;
     });
 }
